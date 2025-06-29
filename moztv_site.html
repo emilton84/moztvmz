@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loja IPTV - MozTV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #00b894;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 600;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    .hero {
+      padding: 40px 20px 20px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .hero h2 {
+      color: #00cec9;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 16px;
+      color: #dfe6e9;
+    }
+    .intro {
+      padding: 30px 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.2);
+      font-size: 18px;
+      line-height: 1.7;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .intro strong {
+      color: #00cec9;
+    }
+    .planos {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 20px;
+      gap: 20px;
+    }
+    .plano {
+      background: rgba(0,0,0,0.4);
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: transform 0.3s ease;
+      animation: fadeInUp 1s ease;
+    }
+    .plano:hover {
+      transform: translateY(-5px);
+    }
+    .plano h3 {
+      margin: 0;
+      color: #55efc4;
+      font-size: 20px;
+    }
+    .plano p {
+      margin: 8px 0;
+      color: #dfe6e9;
+    }
+    .plano-icon {
+      font-size: 38px;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .btn {
+      background: #00cec9;
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 20px;
+      font-size: 17px;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.3s;
+      box-shadow: 0 4px 12px rgba(0, 206, 201, 0.4);
+    }
+    .btn:hover {
+      background: #00b894;
+    }
+    .pagamento {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #b2bec3;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.5);
+      color: #b2bec3;
+      font-size: 14px;
+    }
+    @media (min-width: 768px) {
+      .planos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .plano {
+        width: 45%;
+        max-width: 300px;
+      }
+    }
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .btn-flutuante {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      z-index: 9999;
+      background: #00cec9;
+      color: white;
+      padding: 16px 30px;
+      border-radius: 30px;
+      font-size: 18px;
+      box-shadow: 0 4px 16px rgba(0, 206, 201, 0.6);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn-flutuante:hover {
+      background: #00b894;
+    }
+  </style>
+</head>
+<body>
+
+  <header>MozTV - Venda de IPTV Premium</header>
+
+  <div class="hero">
+    <h2>📺 Assista a mais de 3.000 canais</h2>
+    <p>Filmes, Esportes, Canais ao vivo em qualquer dispositivo!</p>
+  </div>
+
+  <div class="intro">
+    <p><strong>IPTV é a nova forma de ver TV!</strong> Tenha acesso a milhares de canais nacionais e internacionais, filmes, séries e eventos ao vivo diretamente no seu televisor, celular ou computador. <br>Com <strong>qualidade HD</strong> e <strong>preços acessíveis</strong>, a <strong>MozTV</strong> é a sua melhor escolha para entretenimento ilimitado em Moçambique!</p>
+  </div>
+
+  <div class="planos">
+    <div class="plano">
+      <span class="plano-icon">🗓️</span>
+      <h3>Plano Semanal</h3>
+      <p>7 dias de acesso</p>
+      <p><strong>45 MT</strong></p>
+      <a class="btn" href="https://wa.me/258834112478?text=Olá,+quero+assinar+o+plano+semanal+de+IPTV">📲 Comprar via WhatsApp</a>
+      <div class="pagamento">💳 Pagamento: M-Pesa / e-Mola</div>
+    </div>
+    <div class="plano">
+      <span class="plano-icon">📅</span>
+      <h3>Plano Mensal</h3>
+      <p>1 mês de acesso</p>
+      <p><strong>195 MT</strong></p>
+      <a class="btn" href="https://wa.me/258834112478?text=Olá,+quero+assinar+o+plano+mensal+de+IPTV">📲 Comprar via WhatsApp</a>
+      <div class="pagamento">💳 Pagamento: M-Pesa / e-Mola</div>
+    </div>
+    <div class="plano">
+      <span class="plano-icon">📆</span>
+      <h3>Plano Trimestral</h3>
+      <p>3 meses de acesso</p>
+      <p><strong>395 MT</strong></p>
+      <a class="btn" href="https://wa.me/258834112478?text=Olá,+quero+o+plano+trimestral+de+IPTV">📲 Comprar via WhatsApp</a>
+      <div class="pagamento">💳 Pagamento: M-Pesa / e-Mola</div>
+    </div>
+    <div class="plano">
+      <span class="plano-icon">📺</span>
+      <h3>Plano Anual</h3>
+      <p>12 meses de acesso</p>
+      <p><strong>1995 MT</strong></p>
+      <a class="btn" href="https://wa.me/258834112478?text=Olá,+quero+assinar+o+plano+anual+de+IPTV">📲 Comprar via WhatsApp</a>
+      <div class="pagamento">💳 Pagamento: M-Pesa / e-Mola</div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 MozTV. Todos os direitos reservados.
+  </footer>
+
+  <section class="intro" style="font-size:16px; padding: 30px 20px; text-align: center; background: rgba(0, 0, 0, 0.4);">
+    <h3 style="color:#00cec9; margin-bottom: 10px;">Como funciona o IPTV?</h3>
+    <p>O IPTV (TV pela internet) permite que você assista canais ao vivo, filmes e séries usando apenas conexão de internet. Não precisa antena, só um aparelho com internet: celular, TV Box, Smart TV ou computador.</p>
+    <p>Funciona em todo o Moçambique e também em outros países! Basta ter um aplicativo compatível como <a href="https://sfile.mobi/download/2SzApjJyTer?fid=MlN6QXBqSnlUZXIma2V5PUYxRDI1OUY0MzlBN0ZFMzc-" target="_blank" style="color: #00cec9; text-decoration: underline;"><strong>Shamel TV</strong></a>.</p>
+    <p><strong>Oferecemos teste grátis de 45 minutos</strong> para você experimentar antes de pagar. Peça já no WhatsApp!</p>
+  </section>
+
+  <a href="https://wa.me/258834112478?text=Olá,+quero+fazer+um+teste+grátis+de+IPTV" class="btn-flutuante" target="_blank" rel="noopener noreferrer">
+    📲 Teste Grátis via WhatsApp
+  </a>
+
+</body>
+</html>
